@@ -1,0 +1,23 @@
+.header {
+  max-height: 90vh;
+  background-color: khaki;
+
+  background: url('./../../assets/img/circles-01.svg') no-repeat -8% -50%,
+    url('./../../assets/img/circles-02.svg') no-repeat 130% -165%,
+    url('./../../assets/img/circles-03.svg') no-repeat 105% 110%,
+    url('./../../assets/img/circles-04.svg') no-repeat -10% 125%,
+    linear-gradient(to right, #f7f7f7, #f7f7f7);
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5rem;
+  & .sub-icon {
+    padding-bottom: 0.5rem;
+    background: url('./../../assets/img/green-sub.svg') no-repeat bottom center;
+  }
+
+  & > * + * {
+    margin-top: 2.3rem !important;
+  }
+}
