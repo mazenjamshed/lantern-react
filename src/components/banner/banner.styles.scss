@@ -1,0 +1,26 @@
+.banner {
+  width: 80vw;
+  min-height: 20rem;
+  background-color: rgb(55, 49, 93);
+  margin: 10rem auto;
+  background: #37315d url(./../../assets/img/banner.svg) right bottom no-repeat;
+  display: flex;
+  padding: 2rem;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+
+    p {
+      color: white;
+    }
+    & button {
+      width: 15rem;
+    }
+
+    & > * + * {
+      margin-bottom: 2rem;
+    }
+  }
+}
